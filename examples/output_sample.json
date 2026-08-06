@@ -1,0 +1,55 @@
+{
+  "application": "电动汽车电池包壳体",
+  "summary": {
+    "total_candidates": 3,
+    "vetoed_count": 5,
+    "top_recommendation": "碳纤维织物/环氧",
+    "recommendation_confidence": "中"
+  },
+  "ranked_materials": [
+    {
+      "rank": 1,
+      "material_id": "MAT007",
+      "grade": "碳纤维织物/环氧",
+      "category": "碳纤维复材",
+      "supplier": "中复神鹰",
+      "key_properties": {
+        "density": 1.5,
+        "tensile_strength": 550.0,
+        "yield_strength": 420.0,
+        "thermal_conductivity": 4.5,
+        "flammability_UL94": "V-0(需涂层)",
+        "cost_per_kg": 28.0
+      },
+      "process": "热压罐/真空导入",
+      "supplier_location": "中国",
+      "lead_time_weeks": 8.0,
+      "topsis_score": 0.7234,
+      "source": {
+        "tds": "CF_fabric_TDS.pdf",
+        "page": "18",
+        "table": "Table6"
+      }
+    }
+  ],
+  "evidence_table": [
+    {
+      "grade": "碳纤维织物/环氧",
+      "comparison": [
+        {"property": "density", "target_min": null, "target_max": 2.0, "actual_value": 1.5, "unit": "g/cm³", "status": "满足", "source": {"tds": "CF_fabric_TDS.pdf", "page": "18", "table": "Table6"}},
+        {"property": "tensile_strength", "target_min": 300, "target_max": null, "actual_value": 550.0, "unit": "MPa", "status": "满足", "source": {"tds": "CF_fabric_TDS.pdf", "page": "18", "table": "Table6"}},
+        {"property": "thermal_conductivity", "target_min": 100, "target_max": null, "actual_value": 4.5, "unit": "W/mK", "status": "不满足", "source": {"tds": "CF_fabric_TDS.pdf", "page": "18", "table": "Table6"}}
+      ]
+    }
+  ],
+  "veto_details": [
+    {"material_id": "MAT001", "grade": "ADC12", "requirement": "密度 ≤ 2.0 g/cm³", "actual_value": "2.7 g/cm³", "veto_reason": "密度 2.7 g/cm³ 超过上限 2.0 g/cm³", "status": "否决"},
+    {"material_id": "MAT002", "grade": "6061-T6", "requirement": "密度 ≤ 2.0 g/cm³", "actual_value": "2.7 g/cm³", "veto_reason": "密度 2.7 g/cm³ 超过上限 2.0 g/cm³", "status": "否决"},
+    {"material_id": "MAT006", "grade": "T300/环氧", "requirement": "导热系数 ≥ 100 W/mK", "actual_value": "5 W/mK", "veto_reason": "导热系数 5 W/mK 低于下限 100 W/mK", "status": "否决"},
+    {"material_id": "MAT008", "grade": "PA6-GF30", "requirement": "导热系数 ≥ 100 W/mK", "actual_value": "0.25 W/mK", "veto_reason": "导热系数 0.25 W/mK 低于下限 100 W/mK", "status": "否决"},
+    {"material_id": "MAT004", "grade": "AZ91D", "requirement": "UL94 V-0", "actual_value": "HB", "veto_reason": "阻燃等级 HB 不满足 V-0 要求", "status": "否决"}
+  ],
+  "risk_analysis": [],
+  "next_steps": [],
+  "trace": {}
+}

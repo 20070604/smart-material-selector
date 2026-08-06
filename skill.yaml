@@ -1,0 +1,91 @@
+name: industry_material_selector
+display_name: 材智引擎 · 产业原材料智能选型系统
+description: 将自然语言需求转化为数据驱动的材料推荐、排序、风险分析与验证规划，加速工业选材从"经验导向"转向"智能决策"
+version: 1.0.0
+author: AI4S 新研智材黑客松 - 赛道03
+
+input_schema:
+  type: object
+  properties:
+    user_input:
+      type: string
+      description: 自然语言描述的材料选型需求
+      example: "电动汽车电池包壳体，密度<2.0 g/cm³，拉伸强度>300 MPa，导热系数>100 W/mK，UL94 V-0，成本<$20/kg，RoHS合规，国内采购"
+    options:
+      type: object
+      properties:
+        top_n:
+          type: integer
+          description: 返回候选材料数量
+          default: 5
+        weight_overrides:
+          type: object
+          description: 自定义权重覆盖
+          default: null
+      description: 附加选项
+
+output_schema:
+  type: object
+  properties:
+    application:
+      type: string
+      description: 应用场景
+    summary:
+      type: object
+      description: 选型摘要
+    ranked_materials:
+      type: array
+      description: 排序后的候选材料列表
+    evidence_table:
+      type: array
+      description: 关键属性对比证据表
+    veto_details:
+      type: array
+      description: 被否决材料及原因
+    risk_analysis:
+      type: array
+      description: 适配风险分析
+    radar_chart_data:
+      type: array
+      description: 雷达图数据
+    next_steps:
+      type: array
+      description: 下一步验证计划
+    trace:
+      type: object
+      description: 推理溯源信息
+
+pipeline:
+  steps:
+    - name: 需求规范化
+      module: src.normalizer
+      description: 将自然语言需求转化为结构化 JSON
+    - name: 混合检索与初筛
+      module: src.retriever
+      description: 关键词匹配 + 数值过滤
+    - name: 硬性否决检查
+      module: src.veto
+      description: 逐项检查硬性条件
+    - name: TOPSIS 排序
+      module: src.ranking
+      description: 多属性决策排序
+    - name: 风险分析
+      module: src.risk
+      description: 工艺/供应/数据质量风险评估
+    - name: 报告生成
+      module: src.reporter
+      description: 组装 JSON 输出和 Markdown 报告
+
+dependencies:
+  - pandas
+  - numpy
+  - openai
+  - matplotlib
+
+data_sources:
+  - data/material_db.csv
+
+notes:
+  - "无 LLM API Key 时自动使用离线模拟模式，基于规则解析需求"
+  - "数据均为脱敏合成数据，仅供演示"
+  - "供应链信息仅作演示，实际应用需更新数据库"

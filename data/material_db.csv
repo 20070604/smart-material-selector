@@ -1,0 +1,17 @@
+material_id,grade,category,supplier,density,tensile_strength,yield_strength,thermal_conductivity,flammability_UL94,estimated_cost_per_kg,process,weldability,rohs_compliant,reach_svhc_info,supplier_location,lead_time_weeks,annual_capacity_note,source_TDS,page,table_number,supply_stability_score,description
+MAT001,ADC12,铝合金,中国铝业,2.7,310,150,96,HB,3.5,压铸,良好,TRUE,无,中国,4,年产能50万吨,ADC12_TDS_v2.1.pdf,12,Table3,8,常用压铸铝合金 流动性好 适合复杂薄壁件
+MAT002,6061-T6,铝合金,南山铝业,2.7,310,276,167,HB,4.5,挤压/锻造,优秀,TRUE,无,中国,3,年产能30万吨,6061_TDS_2023.pdf,8,Table2,7,通用结构铝合金 强度适中 加工性好
+MAT003,5052-H32,铝合金,明泰铝业,2.68,210,193,138,HB,4.0,冲压/滚压,良好,TRUE,无,中国,3,年产能20万吨,5052_TDS.pdf,15,Table5,7,耐腐蚀铝合金 适合海洋环境
+MAT004,AZ91D,镁合金,云海金属,1.81,230,160,72,HB,8.0,压铸,一般,TRUE,无,中国,5,年产能10万吨,AZ91D_TDS_v3.pdf,10,Table1,6,最常用压铸镁合金 轻量化优选
+MAT005,AM60B,镁合金,云海金属,1.80,220,130,62,HB,8.5,压铸,一般,TRUE,无,中国,5,年产能5万吨,AM60B_TDS.pdf,11,Table2,5,高延展性镁合金 适合吸能结构
+MAT006,T300/环氧,碳纤维复材,光威复材,1.55,600,450,5,HB,25.0,热压罐,差,TRUE,环氧树脂需申报,中国/日本,8,年产能2万吨,T300_epoxy_TDS.pdf,20,Table7,5,标准模量碳纤维预浸料 比强度极高
+MAT007,碳纤维织物/环氧,碳纤维复材,中复神鹰,1.50,550,420,4.5,V-0(需涂层),28.0,热压罐/真空导入,差,TRUE,环氧树脂需申报,中国,8,年产能1.5万吨,CF_fabric_TDS.pdf,18,Table6,5,织物增强复材 可设计性强 V-0需阻燃涂层
+MAT008,PA6-GF30,工程塑料,金发科技,1.36,180,120,0.25,V-0,5.5,注塑,不适用,TRUE,无,中国/德国,4,年产能15万吨,PA6GF30_TDS.pdf,14,Table4,7,玻纤增强尼龙6 阻燃级 性价比高
+MAT009,PBT+GF30,工程塑料,巴斯夫,1.53,140,100,0.21,V-0,6.0,注塑,不适用,TRUE,无,德国/中国,6,年产能10万吨,PBTGF30_TDS.pdf,16,Table5,6,玻纤增强PBT 电绝缘性好 阻燃
+MAT010,PC/ABS,工程塑料,科思创,1.20,60,55,0.20,V-0,4.0,注塑,不适用,TRUE,无,中国/美国,3,年产能20万吨,PCABS_TDS.pdf,9,Table3,7,通用工程塑料 冲击韧性好 V-0阻燃
+MAT011,PEEK,工程塑料,威格斯,1.30,100,95,0.25,V-0,80.0,注塑/挤出,不适用,TRUE,无,英国/中国,10,年产能5000吨,PEEK_TDS.pdf,22,Table8,4,高性能特种塑料 耐高温耐化学 价格高
+MAT012,304不锈钢,金属,太钢不锈,7.93,520,210,16.2,HB,3.0,焊接/冲压,优秀,TRUE,无,中国,3,年产能100万吨,SS304_TDS.pdf,11,Table2,9,通用奥氏体不锈钢 综合性能好
+MAT013,Ti-6Al-4V,钛合金,宝钛集团,4.43,950,880,7.0,HB,60.0,锻造/机加,一般,TRUE,无,中国,10,年产能2万吨,Ti64_TDS.pdf,25,Table9,5,α+β钛合金 比强度极高 耐腐蚀
+MAT014,CFRP单向带/环氧,碳纤维复材,东丽,1.58,700,550,6,HB,30.0,热压罐/自动铺丝,差,TRUE,环氧树脂需申报,日本/中国,10,年产能3万吨,CFRP_uni_TDS.pdf,22,Table8,4,高模量单向带 定向性能优异
+MAT015,ADC12(涂层),铝合金,中国铝业,2.72,310,150,96,V-0(涂层),5.5,压铸+喷涂,良好,TRUE,涂层需评估,中国,5,年产能50万吨,ADC12_coated_TDS.pdf,14,Table5,6,ADC12+阻燃涂层 满足V-0 成本增加
+MAT016,Mg-Zn-Zr,镁合金,上海镁镁,1.85,280,200,8.5,HB,12.0,压铸,一般,TRUE,无,中国,6,年产能3万吨,MgZnZr_TDS.pdf,13,Table3,5,高强镁合金 强度接近铝合金

@@ -1,0 +1,7 @@
+{
+  "user_input": "电动汽车电池包壳体，密度<2.0 g/cm³，拉伸强度>300 MPa，导热系数>100 W/mK，UL94 V-0，成本<$20/kg，RoHS合规，国内采购，年用量1000吨",
+  "options": {
+    "top_n": 5,
+    "weight_overrides": null
+  }
+}
